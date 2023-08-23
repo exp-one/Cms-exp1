@@ -1,0 +1,110 @@
+$phone: 520px;
+
+@mixin home-data-card() {
+    border-radius: 12px;
+    padding: 1rem 1rem 2rem 1rem;
+
+    @media screen and (max-width: $phone) {
+        width: auto;
+        margin-top: 1rem;
+        padding: 0;
+        height: fit-content;
+    }
+
+    .home-data-header {
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home-data-content {
+        overflow-y: scroll;
+        padding: .4rem 1rem 1rem 1rem;
+        .matexpanel{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .mat-expansion-panel-header {
+            padding: .8rem 2rem .8rem .2rem;
+        }
+
+    }
+}
+
+
+.home-page {
+    margin: 3rem 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $phone) {
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .home-data-card-left {
+        @include home-data-card();
+        width: 40%;
+        height: 88vh;
+    }
+
+    .home-data-card-right {
+
+        @include home-data-card();
+        padding: 2rem;
+        height: fit-content;
+        width: 55%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        //background-color: transparent;
+
+
+        @media screen and (max-width: $phone) {
+            padding: 1rem;
+        }
+        .home-data-card-inner {
+            width: 48%;
+            height: fit-content;
+            align-items: center;
+
+            .hdc-rank{
+                padding: 1.6rem;
+                font-size: 4rem;
+            }
+            .hdc-name{
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+
+        .home-data-card-inner-bottom {
+            overflow-y: hidden;
+            width: 100%;
+            height: fit-content;
+            margin-top: 2rem;
+
+            .home-data-content {
+                overflow-x: scroll;
+                overflow-y: hidden;
+                white-space: nowrap;
+                padding: 4px;
+
+                .box {
+                    display: inline-block;
+                    margin: 1rem;
+                    width: 10rem !important;
+                    height: 10rem !important;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                    border-radius: 8px;
+
+                }
+            }
+        }
+    }
+
+}

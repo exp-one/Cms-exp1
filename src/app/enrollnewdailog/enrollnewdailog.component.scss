@@ -1,0 +1,22 @@
+@import "../../styles.scss";
+
+.enroll-new-dailog{
+    margin: auto;
+    padding: 0rem 2rem 2rem 2rem;
+    @media screen and (max-width: $phone) {
+        width: 65vw; 
+        margin: auto; 
+    }
+
+    .enroll-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .enroll-header {
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+}

@@ -1,0 +1,41 @@
+@import "../../styles.scss";
+
+.auth-card {
+    @media screen and (max-width: $phone) {
+        width: 94%;
+        margin: 1rem auto;
+        border-radius: 12px;
+      }
+    @media screen and (min-width: $tablet) {
+        width: 40%;
+        padding: 1rem;
+        margin: 10vh auto;
+        border-radius: 12px;
+      }
+
+    .auth-header{
+        margin: auto;
+        text-align: center;
+      }
+
+      form{
+        padding: 2rem 2rem 1.6rem 2rem;
+        .auth-mat-error{
+            margin-bottom: .2rem;
+        }
+        .full-width{
+            display: block;
+            width: 100%;
+          }
+      }
+
+
+  }
+
+
+  
+
+  
+
+  
+  

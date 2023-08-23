@@ -1,0 +1,168 @@
+<div class="enroll-page">
+
+  <mat-card class="enroll-card">
+
+    <mat-card-header class="enroll-header">
+      <mat-card-title> Enroll New Student </mat-card-title>
+      <mat-card-subtitle> Fill the details below to enroll new student </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+
+      <form action="" [formGroup]="enrollForm" (ngSubmit)="onSubmit()" class="enroll-form">
+        <mat-form-field appearance="outline">
+          <mat-label> Name </mat-label>
+          <input matInput [formControl]="nameField" placeholder="Placeholder">
+          <mat-icon color="primary" matSuffix>person</mat-icon>
+          <mat-error class="auth-mat-error" *ngIf="nameField.hasError('required')">
+            Name is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label> Roll No </mat-label>
+          <input matInput [formControl]="rollnoField" placeholder="Placeholder">
+          <mat-icon color="primary" matSuffix>looks_one</mat-icon>
+          <mat-error class="auth-mat-error" *ngIf="rollnoField.hasError('required')">
+            Roll number is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label> Course </mat-label>
+          <input matInput [formControl]="courseField" placeholder="Placeholder">
+          <mat-icon color="primary" matSuffix>laptop</mat-icon>
+          <mat-error class="auth-mat-error" *ngIf="courseField.hasError('required')">
+            course is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label> Batch </mat-label>
+          <input matInput [formControl]="batchField" placeholder="Placeholder">
+          <mat-icon color="primary" matSuffix>group</mat-icon>
+          <mat-error class="auth-mat-error" *ngIf="batchField.hasError('required')">
+            batch is required
+          </mat-error>
+        </mat-form-field>
+ 
+        <button type="submit" mat-raised-button color="primary" class="full-width largebtn"
+          [disabled]="enrollForm.invalid"> Enroll </button>
+
+      </form>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="list-card">
+    <mat-card-header class="list-header">
+      <mat-card-title> All students </mat-card-title>
+      <mat-card-subtitle> List of all current students </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content class="list-card-content">
+
+      <mat-accordion>
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-list-item>
+                <mat-icon color="primary" matListItemIcon>person</mat-icon>
+                <div matListItemTitle> George Russel </div>
+                <div matListItemLine> Angular, Material UI </div>
+              </mat-list-item>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+
+              <mat-list-item>
+                <mat-icon color="primary" matListItemIcon>person</mat-icon>
+                <div matListItemTitle> Cherles Leclerc </div>
+                <div matListItemLine> Angular, Material UI </div>
+              </mat-list-item>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-list-item>
+                <mat-icon color="primary" matListItemIcon>person</mat-icon>
+                <div matListItemTitle> Lando Norris </div>
+                <div matListItemLine> React </div>
+              </mat-list-item>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-list-item>
+                <mat-icon color="primary" matListItemIcon>person</mat-icon>
+                <div matListItemTitle> Sebastian Vettel </div>
+                <div matListItemLine> React </div>
+              </mat-list-item>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-list-item>
+                <mat-icon color="primary" matListItemIcon>person</mat-icon>
+                <div matListItemTitle> Sebastian Vettel </div>
+                <div matListItemLine> React </div>
+              </mat-list-item>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-list-item>
+                <mat-icon color="primary" matListItemIcon>person</mat-icon>
+                <div matListItemTitle> Sebastian Vettel </div>
+                <div matListItemLine> React </div>
+              </mat-list-item>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+          <p>I'm visible because I am open</p>
+        </mat-expansion-panel>
+
+      </mat-accordion>
+
+    </mat-card-content>
+  </mat-card>
+
+</div>

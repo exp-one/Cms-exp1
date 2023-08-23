@@ -1,0 +1,17 @@
+.error-card {
+    width: 80vw;
+    margin: auto;
+    margin-top: 16vh;
+
+    .error-header {
+        font-size: 2rem !important;
+        font-weight: 700 !important;
+    }
+
+    .align-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

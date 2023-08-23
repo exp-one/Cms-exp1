@@ -1,0 +1,36 @@
+@import "../../styles.scss";
+
+
+.footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-weight: 400;
+    height: auto;
+    min-height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    .footer-brand{
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        @media screen and (max-width: $phone) {
+        margin: auto;
+        }
+
+        .footer-brand img{
+            margin: .2rem .6rem;
+        }
+    }
+    .footer-text{
+        font-size: .8rem;
+        @media screen and (max-width: $phone) {
+            margin: auto;
+            }
+        
+    }
+}
+
+
