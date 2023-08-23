@@ -1,0 +1,54 @@
+<div class="enroll-new-dailog">
+    <mat-card-header class="enroll-header">
+        <mat-card-title> Enroll New Student </mat-card-title>
+        <mat-card-subtitle> Fill the details below to enroll new student </mat-card-subtitle>
+    </mat-card-header>
+
+    <form action="" [formGroup]="enrollForm" (ngSubmit)="onSubmit()" class="enroll-form">
+
+        <mat-form-field appearance="outline">
+          <mat-label> Name </mat-label>
+          <input matInput [formControl]="nameField" placeholder="Placeholder">
+          <mat-icon color="primary" matSuffix>person</mat-icon>
+          <mat-error class="auth-mat-error" *ngIf="nameField.hasError('required')">
+            Name is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label> Roll No </mat-label>
+          <input matInput [formControl]="rollnoField" placeholder="Placeholder">
+          <mat-icon color="primary" matSuffix>looks_one</mat-icon>
+          <mat-error class="auth-mat-error" *ngIf="rollnoField.hasError('required')">
+            Roll number is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label> Course </mat-label>
+          <input matInput [formControl]="courseField" placeholder="Placeholder">
+          <mat-icon color="primary" matSuffix>laptop</mat-icon>
+          <mat-error class="auth-mat-error" *ngIf="courseField.hasError('required')">
+            course is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label> Batch </mat-label>
+          <input matInput [formControl]="batchField" placeholder="Placeholder">
+          <mat-icon color="primary" matSuffix>group</mat-icon>
+          <mat-error class="auth-mat-error" *ngIf="batchField.hasError('required')">
+            batch is required
+          </mat-error>
+        </mat-form-field>
+ 
+        <button type="submit" mat-raised-button color="primary" class="full-width largebtn"
+          [disabled]="enrollForm.invalid" mat-dialog-close> Enroll </button>
+<br>
+          <button mat-raised-button mat-button mat-dialog-close> Close </button>
+
+      </form>
+
+
+
+</div>

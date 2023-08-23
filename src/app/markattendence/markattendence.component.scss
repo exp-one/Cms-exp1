@@ -1,0 +1,30 @@
+@import "../../styles.scss";
+
+
+.mark-page {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: $phone) {
+        margin: 1rem;
+    }
+
+    .stepper-comp {
+        border-radius: 12px;
+        width: 100%;
+        .mat-stepper-vertical {
+            width: 100%;
+        }
+
+        .stepper-form-one {
+            padding-top: .6rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+
+
+}

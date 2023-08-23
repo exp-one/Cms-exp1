@@ -1,0 +1,60 @@
+@import "../../styles.scss";
+
+
+.enroll-page {
+    margin: 3rem 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $phone) {
+        margin: 1rem;
+        flex-direction: column;
+    }
+    
+    .enroll-card {
+        border-radius: 12px;
+        padding: 1rem;
+        width: 50%;
+        height: fit-content;
+        @media screen and (max-width: $phone) {
+            width: auto;
+            padding: 0;
+        }
+
+        .enroll-header {
+            margin: auto;
+            text-align: center;
+        }
+
+        .enroll-form {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .list-card {
+        height: 86vh;
+        border-radius: 12px;
+        padding: 1rem 1rem 2rem 1rem;
+        width: 45%;
+        @media screen and (max-width: $phone) {
+            width: auto;
+            margin-top: 1rem;
+            padding: 0;
+            height: fit-content;
+        }
+
+        .list-header {
+            padding-bottom: 1rem;
+        }
+
+        .list-card-content {
+            overflow-y: scroll;
+          .mat-expansion-panel-header{
+            padding: .8rem 2rem .8rem .2rem ; 
+          }
+          
+                }
+    }
+}

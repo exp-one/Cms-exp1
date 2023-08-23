@@ -1,0 +1,182 @@
+<div class="home-page">
+
+
+    <mat-card class="home-data-card-left">
+        <mat-card-header class="home-data-header">
+            <mat-card-title> All Courses </mat-card-title>
+            <mat-card-subtitle> List of all current courses </mat-card-subtitle>
+            <button type="submit" mat-raised-button color="primary"> Refresh </button>
+        </mat-card-header>
+
+        <mat-card-content class="home-data-content">
+
+            <mat-accordion>
+
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-list-item>
+                                <mat-icon color="primary" matListItemIcon>library_books</mat-icon>
+                                <div matListItemTitle> Angular </div>
+                                <div matListItemLine> Web Dev, Frontend </div>
+                            </mat-list-item>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="matexpanel">
+                        <p> Angular is a JavaScript framework for building web and mobile apps, provides efficient
+                            development and structure for complex apps. </p>
+                        <button type="submit" mat-raised-button color="primary" class="full-width largebtn"> Enroll new
+                            student </button>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-list-item>
+                                <mat-icon color="primary" matListItemIcon>library_books</mat-icon>
+                                <div matListItemTitle> Type Script </div>
+                                <div matListItemLine> Web Dev, Frontend </div>
+                            </mat-list-item>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="matexpanel">
+                        <p>
+
+                            TypeScript is a superset of JavaScript, providing optional static typing and enhanced
+                            language features for large scale app development. </p>
+                        <button type="submit" mat-raised-button color="primary" class="full-width largebtn"> Enroll new
+                            student </button>
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-list-item>
+                                <mat-icon color="primary" matListItemIcon>library_books</mat-icon>
+                                <div matListItemTitle> Node JS </div>
+                                <div matListItemLine> Web Dev, Backend </div>
+                            </mat-list-item>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="matexpanel">
+
+                        <p>
+                            Node.js is a JavaScript runtime environment for server-side development, enables building
+                            server apps using JavaScript.
+                        </p>
+                        <button type="submit" mat-raised-button color="primary" class="full-width largebtn"> Enroll new
+                            student </button>
+
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-list-item>
+                                <mat-icon color="primary" matListItemIcon>library_books</mat-icon>
+                                <div matListItemTitle> Figma </div>
+                                <div matListItemLine> Design </div>
+                            </mat-list-item>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="matexpanel">
+
+                        <p>
+                            Figma is a cloud-based design tool that allows teams to create, collaborate and share user
+                            interface designs. It's a popular tool for creating wireframes, prototypes, and
+                            high-fidelity mockups for web and mobile apps.
+                        </p>
+                        <button type="submit" mat-raised-button color="primary" class="full-width largebtn"> Enroll new
+                            student </button>
+
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+
+                            <mat-list-item>
+                                <mat-icon color="primary" matListItemIcon>library_books</mat-icon>
+                                <div matListItemTitle> React JS </div>
+                                <div matListItemLine> Web Dev, Frontend </div>
+                            </mat-list-item>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="matexpanel">
+                        <p>
+                            React is an open-source JavaScript library for building user interfaces. It allows
+                            developers to build reusable UI components and manage the state of an application using a
+                            virtual DOM.
+                        </p>
+
+                        <button type="submit" mat-raised-button color="primary" class="full-width largebtn"> Enroll new
+                            student </button>
+
+                    </div>
+                </mat-expansion-panel>
+
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <mat-list-item>
+                                <mat-icon color="primary" matListItemIcon>library_books</mat-icon>
+                                <div matListItemTitle> Mongo DB </div>
+                                <div matListItemLine> Database </div>
+                            </mat-list-item>
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <div class="matexpanel">
+
+                        <p>
+                            MongoDB is a NoSQL, document-based database that allows for high performance and
+                            scalability. It uses a flexible schema and stores data in BSON (Binary JSON) format, making
+                            it easy to work with modern web and mobile app development stacks.
+                        </p>
+                        <button type="submit" mat-raised-button color="primary" class="full-width largebtn"> Enroll new
+                            student </button>
+
+                    </div>
+                </mat-expansion-panel>
+
+            </mat-accordion>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="home-data-card-right">
+
+        <mat-card class="home-data-card-inner">
+            <mat-card-title class="hdc-rank mat-primary"> 1 </mat-card-title>
+            <mat-card-subtitle class="hdc-name"> Lewis Hamilton </mat-card-subtitle>
+        </mat-card>
+        <mat-card class="home-data-card-inner">
+            <mat-card-title class="hdc-rank"> 8 </mat-card-title>
+            <mat-card-subtitle class="hdc-name"> Angular </mat-card-subtitle>
+        </mat-card>
+
+        <mat-card class="home-data-card-inner-bottom">
+            <mat-card-header class="home-data-header">
+                <mat-card-title> My Courses </mat-card-title>
+                <mat-card-subtitle> List of courses that you can teach </mat-card-subtitle>
+                <button type="submit" mat-raised-button color="primary"> Add New </button>
+            </mat-card-header>
+
+            <mat-card-content class="home-data-content">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </mat-card-content>
+        </mat-card>
+
+    </mat-card>
+
+
+
+</div>

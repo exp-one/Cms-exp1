@@ -1,0 +1,45 @@
+@import "../../styles.scss";
+
+.enroll-page {
+    margin: 3rem 3rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $phone) {
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    .enroll-card {
+        border-radius: 12px;
+        padding: 1rem;
+        width: 100%;
+        height: fit-content;
+    
+        @media screen and (max-width: $phone) {
+            width: auto;
+            padding: 0;
+        }
+
+        .enroll-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        table {
+            width: 100%;
+          }
+          
+          .mat-mdc-form-field {
+            font-size: 14px;
+            width: 100%;
+          }
+          
+          td, th {
+            width: 25%;
+          }
+
+    }
+}
